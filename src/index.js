@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Components from './components/';
+import apps from './apps/';
 import componentsToRender from './componentsToRender';
 
 import './styles.css';
 
 const App = () => (
   <div className="App">
-    {componentsToRender.map(({ name: componentName }) => {
-      const Component = Components[componentName];
+    {componentsToRender.map(({ name: appName }) => {
+      const App = apps[appName];
       return (
         <div>
-          <Component />
+          <App />
           <hr />
         </div>
       );

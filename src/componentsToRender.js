@@ -2,6 +2,10 @@ const componentsConfig = [
   {
     name: 'Counter',
     show: true
+  },
+  {
+    name: 'Todos',
+    show: true
   }
 ];
 
